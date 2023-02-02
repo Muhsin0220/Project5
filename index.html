@@ -24,25 +24,21 @@
         #s1 {
             color: #b143e8;
         }
-
-        #im1 {
-            width: 100%;
+        #im1{
+            width:100%;
         }
-
-        #p1 {
+        #p1{
             font-size: 14px;
             font-weight: 500;
         }
-
-        #b1 {
+        #b1{
             background-color: #5e068a;
             border: none;
             height: 40px;
             width: 125px;
             color: white;
         }
-
-        #b2 {
+        #b2{
             background-color: none;
             border: none;
             height: 40px;
@@ -53,17 +49,29 @@
             font-size: 14px;
             font-weight: 500;
         }
-
-        #b2:hover {
+        #b2:hover{
             background-color: #5e068a;
             color: white;
         }
-
-        .a1 {
+        .a1{
             color: white;
             text-decoration: none;
             font-size: small;
             font-weight: 500;
+        }
+        #card{
+            transition-duration: 1s;
+        }
+        #card:hover{
+            box-shadow: 0 0 20px 0px rgba(117, 83, 83, 0.877);
+            transform: translateY(-10px);
+        }
+        #c1{
+            transition-duration: 1s;
+        }
+        #c1:hover{
+            box-shadow: 0 0 20px 0px rgba(117, 83, 83, 0.877);
+            transform: translateY(-10px);
         }
     </style>
 
@@ -182,8 +190,7 @@
         </button>
     </div>
     <!-- Button trigger modal -->
-    <button class="ms-5" type="button" id="b1" style="border-radius: 25px;" data-bs-toggle="modal"
-        data-bs-target="#exampleModal">
+    <button class="ms-5" type="button" id="b1" style="border-radius: 25px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Register
     </button>
 
@@ -251,69 +258,65 @@
         <h3 id="h1">OUR <span id="s1"> COURSES</span></h3>
     </div>
     <div class="container w-75%">
-        <div class="row mt-5">
-            <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+        <div id="c1" class="row mt-5" >
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
                 <img src="./images/img4.jpg" alt="" id="im1">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
 
                 <h5 class="mt-5" id="h1">DATA SCIENCE - ML - AI - BIG DATA WITH CLOUD & TABLEAU</h5>
-                <p style="font-weight: 100;">Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics,
-                    Probability Concepts, Machine
+                <p style="font-weight: 100;">Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics, Probability Concepts, Machine
                     Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS Cloud.</p>
 
                 <p id="p1">📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)</p>
 
                 <p id="p1">⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day</p>
 
-                <p id="p1">🧑‍🏫 Course Fees: <a href="" id="h1">VIEW MORE</a></p>
+                <p id="p1">🧑‍🏫 Course Fees: <a href="" id="h1" >VIEW MORE</a></p>
 
             </div>
         </div>
 
         <div class="row mt-5">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 22rem;">
+            <div id="card" class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 24rem;">
                     <img src="./images/img5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 id="h1" class="card-title">Python Django - Angular-Full Stack Web Development Expert</h5>
-                        <p id="p1" class="card-text">Core Python, Basics of Programming, Unix Commands, Advanced Python,
-                            Django Framework, REST API, Git, Angul...</p>
-                        <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
+                      <h5 id="h1" class="card-title">Python Django - Angular-Full Stack Web Development Expert</h5>
+                      <p id="p1" class="card-text">Core Python, Basics of Programming, Unix Commands, Advanced Python, Django Framework, REST API, Git, Angul...</p>
+                      <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
                     </div>
-                </div>
+                  </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 22rem;">
+            <div id="card" class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 24rem;">
                     <img src="./images/img6.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 id="h1" class="card-title">Software Testing Specialist</h5>
-                        <p id="p1" class="card-text">Manual Testing, Java foundations, Mobile Testing, Selenium IDE,
-                            Selenium Web driver, Selenium Advanced Web...</p>
-                        <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
+                      <h5 id="h1" class="card-title">Software Testing Specialist</h5>
+                      <p id="p1" class="card-text">Manual Testing, Java foundations, Mobile Testing, Selenium IDE, Selenium Web driver, Selenium Advanced Web...</p>
+                      <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
                     </div>
-                </div>
+                  </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 22rem;">
+            <div id="card" class= "col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 24rem;">
                     <img src="./images/img7.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 id="h1" class="card-title">MEARN Stack Web Development Expert - Angular & React</h5>
-                        <p id="p1" class="card-text">HTML, CSS, Javascript, Bootstrap, Git, Typescript, MongoDB, MySQL,
-                            Express.JS, Angular, React.js and Node....</p>
-                        <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
+                      <h5 id="h1" class="card-title">MEARN Stack Web Development Expert - Angular & React</h5>
+                      <p id="p1" class="card-text">HTML, CSS, Javascript, Bootstrap, Git, Typescript, MongoDB, MySQL, Express.JS, Angular, React.js and Node....</p>
+                       <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
     </div>
     <div class="container w-25">
-        <div class="row mt-5">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <button id="b2" style="margin-left: 25%;">VIEW MORE</button>
-            </div>
+    <div class="row mt-5">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <button id="b2" style="margin-left: 25%;">View all Courses</button>
         </div>
     </div>
+</div>
 </body>
 
 </html>
