@@ -16,6 +16,57 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
+    <style>
+        #h1 {
+            color: #5e068a;
+        }
+
+        #s1 {
+            color: #b143e8;
+        }
+
+        #im1 {
+            width: 100%;
+        }
+
+        #p1 {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #b1 {
+            background-color: #5e068a;
+            border: none;
+            height: 40px;
+            width: 125px;
+            color: white;
+        }
+
+        #b2 {
+            background-color: none;
+            border: none;
+            height: 40px;
+            width: 125px;
+            border-radius: 25px;
+            border: 2px solid #5e068a;
+            color: #5e068a;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #b2:hover {
+            background-color: #5e068a;
+            color: white;
+        }
+
+        .a1 {
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            font-weight: 500;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -51,7 +102,7 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./images/logo.png" alt=""
                     style="height: 50px; margin-left: 50px;"></a>
@@ -131,8 +182,9 @@
         </button>
     </div>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch modal
+    <button class="ms-5" type="button" id="b1" style="border-radius: 25px;" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Register
     </button>
 
     <!-- Modal -->
@@ -169,27 +221,99 @@
         </div>
     </div>
     <div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 p-5" >
-            <h1 style="color: #5e068a;">Luminar Technolab Pvt Ltd</h1>
-            <p style="color: #b143e8;">CIN: U80220KL2021PTC071578</p>
-            <p>Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing advanced
-                level software training to Students and by helping them to get placed in IT companies. We are a team of
-                IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s career
-                foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python Training,
-                Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to match with
-                the current industry requirements. Our Vision is to provide 100% placements to students those who enroll
-                with us for our specialized courses.</p>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-5">
+                <h1 style="color: #5e068a;">Luminar Technolab Pvt Ltd</h1>
+                <p style="color: #b143e8;">CIN: U80220KL2021PTC071578</p>
+                <p>Luminar Technolab is an IT Finishing School located near Infopark - Cochin, focused on providing
+                    advanced
+                    level software training to Students and by helping them to get placed in IT companies. We are a team
+                    of
+                    IT professionals who have experience in IT sector for more than 15 plus years. Our fresher’s career
+                    foster programs are Big Data Training, Data Science Training, Data Analytics Training, Python
+                    Training,
+                    Software Testing Training & Selenium Training in Cochin, Kerala are designed in such a way to match
+                    with
+                    the current industry requirements. Our Vision is to provide 100% placements to students those who
+                    enroll
+                    with us for our specialized courses.</p>
 
                 <button class="rounded-pill text-white mt-4"
-                            style="background-color: #5e068a; border: none; font-size: 14px; height: 60px; width: 150px; font-weight: 700;">LEARN MORE</button>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="./images/img3.jpg" alt="">
+                    style="background-color: #5e068a; border: none; font-size: 14px; height: 60px; width: 150px; font-weight: 700;">LEARN
+                    MORE</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+                <img id="im1" src="./images/img3.jpg" alt="">
+            </div>
         </div>
     </div>
-</div>
+    <div class="text-center mt-5">
+        <h3 id="h1">OUR <span id="s1"> COURSES</span></h3>
+    </div>
+    <div class="container w-75%">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+                <img src="./images/img4.jpg" alt="" id="im1">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
 
+                <h5 class="mt-5" id="h1">DATA SCIENCE - ML - AI - BIG DATA WITH CLOUD & TABLEAU</h5>
+                <p style="font-weight: 100;">Python, Hadoop, Spark, Data Analytics, Linear Algebra, Statistics,
+                    Probability Concepts, Machine
+                    Learning, Deep Learning, Data Science, Artificial Intelligence, Tableau, AWS Cloud.</p>
+
+                <p id="p1">📅 Next Batch : Jan 03rd 2022 (09:30 am - 11:30 am)</p>
+
+                <p id="p1">⏰ Duration: 6 Months, 5-6 Days a Week, 2-3 Hours/day</p>
+
+                <p id="p1">🧑‍🏫 Course Fees: <a href="" id="h1">VIEW MORE</a></p>
+
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 22rem;">
+                    <img src="./images/img5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="h1" class="card-title">Python Django - Angular-Full Stack Web Development Expert</h5>
+                        <p id="p1" class="card-text">Core Python, Basics of Programming, Unix Commands, Advanced Python,
+                            Django Framework, REST API, Git, Angul...</p>
+                        <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 22rem;">
+                    <img src="./images/img6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="h1" class="card-title">Software Testing Specialist</h5>
+                        <p id="p1" class="card-text">Manual Testing, Java foundations, Mobile Testing, Selenium IDE,
+                            Selenium Web driver, Selenium Advanced Web...</p>
+                        <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 22rem;">
+                    <img src="./images/img7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="h1" class="card-title">MEARN Stack Web Development Expert - Angular & React</h5>
+                        <p id="p1" class="card-text">HTML, CSS, Javascript, Bootstrap, Git, Typescript, MongoDB, MySQL,
+                            Express.JS, Angular, React.js and Node....</p>
+                        <button id="b1"><a href="#" class="a1">VIEW MORE</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container w-25">
+        <div class="row mt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <button id="b2" style="margin-left: 25%;">VIEW MORE</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
